@@ -1,0 +1,14 @@
+<section class="detailedProduct">
+  <img src="{{ detailedProduct?.img }}" alt="" />
+  <div class="productInfo">
+    <h3>{{ detailedProduct?.name }}</h3>
+    <p>Price: ${{ detailedProduct?.price }}</p>
+    <p>Type: {{ detailedProduct?.type }}</p>
+    <div>
+      <button class="btn2" (click)="AddCart(detailedProduct)">
+        Add to Cart
+      </button>
+      <button class="btn1" routerLink="/">Home</button>
+    </div>
+  </div>
+</section>

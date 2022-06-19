@@ -1,0 +1,28 @@
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 5px;
+  margin-left: 55px;
+  margin-top: 5px;
+  font-family: sans-serif;
+  list-style: none;
+}
+
+.btn {
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  border: none;
+  color: aliceblue;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}

@@ -1,0 +1,64 @@
+<section class="form-section">
+  <div class="cart-list">
+    <ul *ngFor="let addedItem of cartItem">
+      <img src="{{ addedItem.img }}" />
+      <li>{{ addedItem.name }}</li>
+      <li>{{ addedItem.price }}</li>
+      <li>{{ addedItem.type }}</li>
+      <button (click)="DeleteItem(addedItem)">Remove Item</button>
+    </ul>
+    <div class="total-price">
+      <p class="totalPrice">Total price: ${{ CalculateTotalPrice() }}</p>
+    </div>
+  </div>
+
+  <div>
+    <p class="form-paragrahp">check-out form</p>
+    <form #form="ngForm" class="form" (ngSubmit)="AddMessage()">
+      <input
+        required
+        minlength="8"
+        maxlength="32"
+        type="text"
+        name="fullName"
+        placeholder="Fullname (min. 8 characters)"
+        [(ngModel)]="fullName"
+        class="input-1"
+      />
+      <input
+        required
+        minlength="8"
+        maxlength="32"
+        type="email"
+        name="email"
+        placeholder="Email"
+        [(ngModel)]="email"
+        class="input-1"
+      />
+      <input
+        required
+        minlength="8"
+        maxlength="200"
+        type="text"
+        name="address"
+        placeholder="Address"
+        [(ngModel)]="address"
+        class="input-1"
+      />
+      <input
+        required
+        minlength="8"
+        maxlength="32"
+        type="text"
+        name="credit"
+        placeholder="Credit card number"
+        [(ngModel)]="creditCard"
+        class="input-1"
+      />
+      <button type="submit" value="submit" [disabled]="form.invalid">
+        Submit
+      </button>
+      <button routerLink="/">Home</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+<img
+  src="{{ item.img }}"
+  alt="store pictures"
+  [routerLink]="['/product', item.id]"
+/>
+<li>Name: {{ item.name }}</li>
+<li>Type: {{ item.type }}</li>
+<li>Price: ${{ item.price }}</li>
+<button (click)="addToCart(item)" class="btn">Add to Cart</button>

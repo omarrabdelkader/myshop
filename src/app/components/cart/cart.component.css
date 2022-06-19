@@ -1,0 +1,67 @@
+.form-section {
+  display: flex;
+  gap: 200px;
+  justify-content: space-around;
+}
+
+li {
+  font-family: sans-serif;
+  margin-bottom: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 40px;
+}
+
+.cartlist {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+button {
+  border: none;
+  color: aliceblue;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 6px;
+}
+
+ul {
+  list-style: none;
+}
+
+.totalPrice {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.form-paragrahp {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+}
+
+.input-1 {
+  width: 200px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border-style: thin;
+}
+
+.total-price {
+  margin-top: 20px;
+  margin-left: 37px;
+}
